@@ -108,3 +108,4 @@ extra_javascript:
 
 nav:
   - 首页: index.md
+  - 培训: course.md
