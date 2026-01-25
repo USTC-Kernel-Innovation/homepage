@@ -1,6 +1,6 @@
 # <strong>培训Lecture</strong>
 
-####<font color=red>请勿将本大赛的资料外传至其他平台！</font>
+####<font color=red>培训资料仅供选手使用，请勿将本大赛的资料外传至其他平台！</font>
 
 ### Lecture-1-Intro
 
@@ -13,3 +13,16 @@
 - Slide: [lecture-2-Ascend-C-ppt](./tutorials/lectures/2-AscendC.pptx)
 - Video: [lecture-2-Ascend-C-video](https://meeting.tencent.com/crm/KWADnZBR8f)
 - Presenter: Yuhang Wang, Yetai Cheng (USTC)
+
+### Lecture-3-Triton Ascend & Ascend NPU IR
+
+- Video: [lecture-3-Ascend-NPU-IR-video](https://meeting.tencent.com/crm/KnDzQ4r7ac) 
+- Presenter: Chen Cheng (HUAWEI)
+
+### Lecture-4-Environment-Setup
+
+- Docs: [](./tutorials/lectures/3-tilelang使用说明.pdf)
+        [](./tutorials/lectures/3-平台使用.pdf)
+        [](./tutorials/lectures/3-triton使用说明.pdf)
+- Video: [lecture-4-Environment-Setup-video](https://meeting.tencent.com/crm/l5ma5rwDaa)
+
