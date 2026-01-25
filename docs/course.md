@@ -21,8 +21,8 @@
 
 ### Lecture-4-Environment-Setup
 
-- Docs: [](./tutorials/lectures/3-tilelang使用说明.pdf)
-        [](./tutorials/lectures/3-平台使用.pdf)
-        [](./tutorials/lectures/3-triton使用说明.pdf)
+- Docs: [tileLang使用说明](./tutorials/lectures/3-tilelang使用说明.pdf)
+        [类脑平台使用说明](./tutorials/lectures/3-平台使用.pdf)
+        [triton使用说明](./tutorials/lectures/3-triton使用说明.pdf)
 - Video: [lecture-4-Environment-Setup-video](https://meeting.tencent.com/crm/l5ma5rwDaa)
 
