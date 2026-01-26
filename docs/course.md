@@ -26,3 +26,7 @@
         [triton使用说明](./tutorials/lectures/3-triton使用说明.pdf)
 - Video: [lecture-4-Environment-Setup-video](https://meeting.tencent.com/crm/l5ma5rwDaa)
 
+### Lecture-5-TileLang-Ascend
+
+- Video: [lecture-5-TileLang-Ascend-video (including flash attn example)](https://meeting.tencent.com/crm/NLR3016709)
+         [拓展--Bilibili昇腾CANN-TileLang开发者直播](https://meeting.tencent.com/crm/N8WGRAW65c)
