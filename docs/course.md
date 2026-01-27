@@ -21,12 +21,15 @@
 
 ### Lecture-4-Environment-Setup
 
-- Docs: [tileLang使用说明](./tutorials/lectures/3-tilelang使用说明.pdf)
-        [类脑平台使用说明](./tutorials/lectures/3-平台使用.pdf)
-        [triton使用说明](./tutorials/lectures/3-triton使用说明.pdf)
+- Docs: - [tileLang使用说明](./tutorials/lectures/3-tilelang使用说明.pdf)
+        - [类脑平台使用说明](./tutorials/lectures/3-平台使用.pdf)
+        - [triton使用说明](./tutorials/lectures/3-triton使用说明.pdf)
 - Video: [lecture-4-Environment-Setup-video](https://meeting.tencent.com/crm/l5ma5rwDaa)
+- Presenter: Congkun Ai (USTC)
 
 ### Lecture-5-TileLang-Ascend
 
-- Video: [lecture-5-TileLang-Ascend-video (including flash attn example)](https://meeting.tencent.com/crm/NLR3016709)
-         [拓展--Bilibili昇腾CANN-TileLang开发者直播](https://meeting.tencent.com/crm/N8WGRAW65c)
+- Video: - [lecture-5-TileLang-Ascend-video (including flash attn example)](https://meeting.tencent.com/crm/NLR3016709)
+         - [拓展--Bilibili昇腾CANN-TileLang开发者直播](https://meeting.tencent.com/crm/N8WGRAW65c)
+- Presenter: Chaoyang Ji (HUAWEI)
+
