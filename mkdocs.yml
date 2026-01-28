@@ -110,3 +110,7 @@ nav:
   - 首页: index.md
   - 培训: course.md
   - 提问区: Q&A.md
+  - warm-up: warm-up.md
+  - 基础算子开发: junior.md
+  - 综合算子开发: senior.md
+  - 集成开发测试: Qwen.md

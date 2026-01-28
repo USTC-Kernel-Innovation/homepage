@@ -26,7 +26,7 @@
     - [类脑平台使用说明](./tutorials/lectures/3-平台使用.pdf)
     - [triton使用说明](./tutorials/lectures/3-triton使用说明.pdf)
 - Video: [lecture-4-Environment-Setup-video](https://meeting.tencent.com/crm/l5ma5rwDaa)
-- Presenter: Congkun Ai (USTC)
+- Presenter: Congkun Ai, Yuhang Wang (USTC)
 
 ### Lecture-5-TileLang-Ascend
 
@@ -35,3 +35,7 @@
     - [拓展--Bilibili昇腾CANN-TileLang开发者直播](https://meeting.tencent.com/crm/N8WGRAW65c)
 - Presenter: Chaoyang Ji (HUAWEI)
 
+### Lecture-6-Triton-Ascend
+
+- Video: [lecture-6-Triton-Ascend (including add kernel example)](https://meeting.tencent.com/crm/N8WEAq3Xcc)
+- Presenter: Bin Jiang (ICT)
