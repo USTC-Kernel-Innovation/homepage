@@ -1,6 +1,6 @@
 # <strong>培训Lecture</strong>
 
-####<font color=red>培训资料仅供选手使用，请勿将本大赛的资料外传至其他平台！</font>
+> <font color=red>培训资料仅供选手使用，请勿将本大赛的资料外传至其他平台！</font>
 
 ### Lecture-1-Intro
 
@@ -32,10 +32,26 @@
 
 - Video: 
     - [lecture-5-TileLang-Ascend-video (including flash attn example)](https://meeting.tencent.com/crm/NLR3016709)
-    - [拓展--Bilibili昇腾CANN-TileLang开发者直播](https://meeting.tencent.com/crm/N8WGRAW65c)
+    - [拓展--Bilibili昇腾CANN-TileLang开发者直播](https://www.bilibili.com/video/BV1HnzZBaETk/?spm_id_from=333.1387.homepage.video_card.click&vd_source=09d1bf2cbd84e8b3aa3357a436352b3a)
 - Presenter: Chaoyang Ji (HUAWEI)
 
 ### Lecture-6-Triton-Ascend
 
 - Video: [lecture-6-Triton-Ascend (including add kernel example)](https://meeting.tencent.com/crm/N8WEAq3Xcc)
 - Presenter: Bin Jiang (ICT)
+
+### Lecture-7-Triton-Ascend
+
+- Video: [lecture-7-Triton-Ascend (including high-performance tuning)](https://meeting.tencent.com/crm/Ngy9G8wdde)
+- Presenter: Yipeng Guo (HUAWEI)
+
+### Lecture-8-TileLang-Development
+
+- Slide: [lecture-8-tilelang-ascend-ppt](./tutorials/lectures/8-tilelang-ascend.pptx)
+- Video: [lecture-8-Tilelang (including matmul & online softmax example, TileLang-Ascend)](https://meeting.tencent.com/crm/KWAJzwnV82)
+- Presenter: Wenhao Xie (PKU)
+
+
+
+> <font color=red>培训资料仅供选手使用，请勿将本大赛的资料外传至其他平台！</font>
+
