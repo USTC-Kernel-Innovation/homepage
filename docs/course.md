@@ -51,6 +51,14 @@
 - Video: [lecture-8-Tilelang (including matmul & online softmax example, TileLang-Ascend)](https://meeting.tencent.com/crm/KWAJzwnV82)
 - Presenter: Wenhao Xie (PKU)
 
+### Lecture-9-Transformer & LLM Infer
+
+- Video: [lecture-9-Transformer & LLM Infer](https://meeting.tencent.com/crm/2V3km6JO37)
+- Docs:
+    - [paged attention](https://www.cse.iitd.ac.in/~rijurekha/col851/pagedattention.pdf)
+    - [flash decoding](https://pytorch.org/blog/flash-decoding/)
+- Presenter: Shengnan Wang (ByteDance), Youhui Bai (USTC)
+
 
 
 > <font color=red>培训资料仅供选手使用，请勿将本大赛的资料外传至其他平台！</font>
