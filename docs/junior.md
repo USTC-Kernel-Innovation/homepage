@@ -11,13 +11,19 @@
 `Softmax` 是深度学习模型中最基础且⾼频使⽤的激活函数之⼀，⼴泛应⽤于多分类任务及 Transformer 架构（如 Attention 机制）中.在⼤模型（LLM）⻓序列推理场景下，`Softmax` 的显存读写带宽往往成为性能瓶颈。
 
 本赛题要求选⼿在 Ascend 910B3 硬件平台上，**使⽤ Triton-Ascend 或 TileLang-Ascend 语言**（二选一即可）编写 `Softmax` 算⼦。具体要求和题面请等待正式发布。
+
 !!! Warning " "
 
     <font color=red>DDL: (●′∀｀●)?</font>
 
 ### Assignment-2 MatMul (MM)
 
+`MatMul`（矩阵乘法, Matrix Multiplication, MM）是深度学习模型中最核心、最基础的计算密集型算子之一，大量应用于全连接层、卷积计算的等价变换、线性映射与 Attention 计算（如 $QK^{T}$ ）中。在大模型（LLM）训练与推理场景下，`MatMul` 的性能极大地影响模型的整体吞吐率，其优化高度依赖于硬件架构特性、数据布局以及计算与访存的协同设计。
 
-!!! Info " "
+在 Ascend 等专用 AI 加速器上，`MatMul` 往往面临算力利用率不足、访存带宽受限以及数据重排开销等性能瓶颈，尤其在大规模矩阵、非对齐维度或 `batch size` 较小时更加明显。
 
-    (●′∀｀●) 现在还什么都没有 (●′∀｀●)
+本赛题要求选手在 Ascend 910B3 硬件平台上，**使用 Triton-Ascend 或 TileLang-Ascend 语言**（二选一即可）编写通用 `MatMul` 算子。具体要求和题面请等待正式发布。
+
+!!! Warning " "
+
+    <font color=red>DDL: (●′∀｀●)?</font>

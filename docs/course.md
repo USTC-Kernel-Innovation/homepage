@@ -55,10 +55,13 @@
 
 - Video: [lecture-9-Transformer & LLM Infer](https://meeting.tencent.com/crm/2V3km6JO37)
 - Docs:
+    - [Transformer Explainer](https://poloclub.github.io/transformer-explainer/)
     - [paged attention](https://www.cse.iitd.ac.in/~rijurekha/col851/pagedattention.pdf)
     - [flash decoding](https://pytorch.org/blog/flash-decoding/)
+    - [flash attention](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=NQRw0bQAAAAJ&citation_for_view=NQRw0bQAAAAJ:_kc_bZDykSQC)
+    - [sparse attention (theory)](https://zhuanlan.zhihu.com/p/691296437)
 - Presenter: Shengnan Wang (ByteDance), Youhui Bai (USTC)
-
+- **Encourage everyone to search for relevant academic papers and videos!!**
 
 
 > <font color=red>培训资料仅供选手使用，请勿将本大赛的资料外传至其他平台！</font>
