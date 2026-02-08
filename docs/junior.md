@@ -8,13 +8,13 @@
 
 ### <strong>Assignment-1 Softmax</strong>
 
-`Softmax` 是深度学习模型中最基础且⾼频使⽤的激活函数之⼀，⼴泛应⽤于多分类任务及 Transformer 架构（如 Attention 机制）中.在⼤模型（LLM）⻓序列推理场景下，`Softmax` 的显存读写带宽往往成为性能瓶颈。
+`Softmax` 是深度学习模型中最基础且⾼频使⽤的激活函数之⼀，⼴泛应⽤于多分类任务及 Transformer 架构（如 Attention 机制）中。在⼤模型（LLM）⻓序列推理场景下，`Softmax` 的显存读写带宽往往成为性能瓶颈。
 
 本赛题要求选⼿在 Ascend 910B3 硬件平台上，**使⽤ Triton-Ascend 或 TileLang-Ascend 语言**（二选一即可）编写 `Softmax` 算⼦。[题面在此处](./assignment/softmax.pdf)，代码框架可以在类脑平台的共享存储获得。
 
 - **提交窗口**：[希冀平台](cscourse.ustc.edu.cn) (cscourse.ustc.edu.cn, 初始用户名为学号，密码为学号)。进入平台之后找到“课程--算子开发创新大赛--作业1”
 
-!!! Warning " "
+!!! Warning "注意"
 
     <font color=red>DDL: 2026年2月7日23:59</font>
 
@@ -26,8 +26,10 @@
 
 在 Ascend 等专用 AI 加速器上，`MatMul` 往往面临算力利用率不足、访存带宽受限以及数据重排开销等性能瓶颈，尤其在大规模矩阵、非对齐维度或 `batch size` 较小时更加明显。
 
-本赛题要求选手在 Ascend 910B3 硬件平台上，**使用 Triton-Ascend 或 TileLang-Ascend 语言**（二选一即可）编写通用 `MatMul` 算子。具体要求和题面请等待正式发布。
+本赛题要求选手在 Ascend 910B3 硬件平台上，**使用 Triton-Ascend 或 TileLang-Ascend 语言**（二选一即可）编写通用 `MatMul` 算子。[题面在此处](./assignment/matmul.pdf)，代码框架可以在类脑平台的共享存储获得。
 
-!!! Warning " "
+- **提交窗口**：[希冀平台](cscourse.ustc.edu.cn) (cscourse.ustc.edu.cn, 初始用户名为学号，密码为学号)。进入平台之后找到“课程--算子开发创新大赛--作业2”
 
-    <font color=red>DDL: (●′∀｀●)?</font>
+!!! Warning "注意"
+
+    <font color=red>DDL: 2026年2月12日23:59</font>
