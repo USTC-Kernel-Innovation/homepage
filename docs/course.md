@@ -58,6 +58,8 @@
     - [Transformer Explainer](https://poloclub.github.io/transformer-explainer/)
     - [paged attention](https://www.cse.iitd.ac.in/~rijurekha/col851/pagedattention.pdf)
     - [paged attention analsys](https://zhuanlan.zhihu.com/p/638468472)
+    - [paged attention relative video -- vllm](https://www.bilibili.com/video/BV1GWjjzfE1b/?spm_id_from=333.337.search-card.all.click&vd_source=4985da9caf62db1e246fa1b67b65b40c)
+    - [paged attention relative paper -- vllm](./assignment/vllm.pdf)
     - [flash decoding](https://pytorch.org/blog/flash-decoding/)
     - [flash attention](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=NQRw0bQAAAAJ&citation_for_view=NQRw0bQAAAAJ:_kc_bZDykSQC)
     - [sparse attention (theory)](https://zhuanlan.zhihu.com/p/691296437)
