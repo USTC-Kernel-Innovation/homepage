@@ -37,7 +37,7 @@ git clone https://github.com/USTC-Kernel-Innovation/homepage.git
 你可以直接使用
 
 ```
-pip install -r ./requirement.txt
+pip install -r ./requirements.txt
 ```
 
 安装我们所需要的包。如果你想自行配置，可以使用下面的指令安装 Mkdocs 包：

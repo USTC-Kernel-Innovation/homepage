@@ -11,7 +11,7 @@
 
 分页注意力（Paged Attention）是一种高效实现注意力键值缓存（KV cache）的方法，它采用固定大小的“页”（块）结构，因此无需为每个序列分配一个大型连续缓冲区。每个序列的 KV cache 存储在页列表中，attention 通过 index map 从这些页中读取数据。这种设计减少了碎片化问题，并能高效批处理大量可变长度序列。
 
-本赛题要求选手在 Ascend 910B3 硬件平台上，**使用 Triton-Ascend 或 TileLang-Ascend 语言**（二选一即可）编写通用 `MatMul` 算子。[题面在此处](./assignment/paged.pdf)，代码框架可以在类脑平台的共享存储获得。
+本赛题要求选手在 Ascend 910B3 硬件平台上，**使用 Triton-Ascend 或 TileLang-Ascend 语言**（二选一即可）编写通用 `Paged Attention` 算子。[题面在此处](./assignment/paged.pdf)，代码框架可以在类脑平台的共享存储获得。
 
 - **提交窗口(稍后创建)**：[希冀平台](cscourse.ustc.edu.cn) (cscourse.ustc.edu.cn, 初始用户名为学号，密码为学号)。进入平台之后找到“课程--算子开发创新大赛--作业3”。 提交窗口创建好之后会在 QQ 群通知，在此之前，同学们可以复习 Paged Attention 的原理，努力实现更高的加速比 ovo）
 
