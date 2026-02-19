@@ -6,7 +6,7 @@
 
 !!! Warning "公告"
 
-    <font face="consolas">任务3 -- 综合算子 -- Paged Attention </font> 已发布
+    综合算子 Paged Attention 的[题面](./assignment/Paged_attn_scripts.pdf)和代码框架均已更新，请务必使用最新框架！！
 
 !!! Warning "公告"
 
