@@ -11,7 +11,7 @@
 
 分页注意力（Paged Attention）是一种高效实现注意力键值缓存（KV cache）的方法，它采用固定大小的“页”（块）结构，因此无需为每个序列分配一个大型连续缓冲区。每个序列的 KV cache 存储在页列表中，attention 通过 index map 从这些页中读取数据。这种设计减少了碎片化问题，并能高效批处理大量可变长度序列。
 
-本赛题要求选手在 Ascend 910B3 硬件平台上，**使用 Triton-Ascend 或 TileLang-Ascend 语言**（二选一即可）编写通用 `MatMul` 算子。[题面在此处](./assignment/Paged_attn_scripts.pdf)，代码框架可以在类脑平台的共享存储获得。
+本赛题要求选手在 Ascend 910B3 硬件平台上，**使用 Triton-Ascend 或 TileLang-Ascend 语言**（二选一即可）编写通用 `Paged Attention` 算子。[题面在此处](./assignment/Paged_attn_scripts.pdf)，代码框架可以在类脑平台的共享存储获得。
 
 - **提交窗口**：[希冀平台](cscourse.ustc.edu.cn) (cscourse.ustc.edu.cn, 初始用户名为学号，密码为学号)。进入平台之后找到“课程--算子开发创新大赛--进阶算子 Paged attention”。 
 
@@ -21,7 +21,7 @@
 
 !!! Warning "注意"
 
-    DDL：2026年3月3日 (●′∀｀●)
+    DDL：2026年3月3日23:59 (●′∀｀●)
 
 
 ### <strong>Assignment-4 Sparse Attention</strong>
@@ -30,10 +30,16 @@ Sparse attention 是为了解决标准自注意力在长序列下计算量随长
 
 带 quest 的 sparse attention 在此基础上进一步引入“查询感知”的动态选择机制。它不再固定哪些 token 可以互相关注，而是根据当前 Query 的内容，通过粗粒度相似度估计、Top-k 选择或近似最近邻检索等方式，先筛选出最相关的一小部分 Key，再对它们进行精确计算。这样既避免了全量计算，又保留了跨长距离建模的能力。整体来看，quest 机制使注意力从固定结构的稀疏计算，转变为“先检索、再计算”的两阶段过程，更适合超长上下文和大规模推理场景。
 
-本赛题要求选⼿在 Ascend 910B3 硬件平台上，**使⽤ Triton-Ascend 或 TileLang-Ascend 语言**（二选一即可）编写 `xxxxx` ，代码框架可以在类脑平台的共享存储获得。
+本赛题要求选⼿在 Ascend 910B3 硬件平台上，**使⽤ Triton-Ascend 或 TileLang-Ascend 语言**（二选一即可）编写一个带 quest 的、支持 GQA 的 `Sparse Attention` 算子，代码框架可以在类脑平台的共享存储获得，题面在[此处](./assignment/sparse-1.pdf)。
 
+- **提交窗口**：进入希冀平台之后找到“课程--算子开发创新大赛--进阶算子 Sparse attention”。**具体赋分规则和评判标准将后续给出** 
+
+- <font color=red>**从本题目开始，奖励金额将与你实现的算子性能挂钩，请尽可能利用讲座知识和调优工具，优化你的算子性能吧！**</font>
 
 !!! Warning "注意"
 
-    <font color=red>还没有内容~</font>
+    DDL：2026年3月15日23:59 (●′∀｀●)
+
+
+
 
