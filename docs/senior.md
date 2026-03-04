@@ -30,7 +30,9 @@ Sparse attention 是为了解决标准自注意力在长序列下计算量随长
 
 带 quest 的 sparse attention 在此基础上进一步引入“查询感知”的动态选择机制。它不再固定哪些 token 可以互相关注，而是根据当前 Query 的内容，通过粗粒度相似度估计、Top-k 选择或近似最近邻检索等方式，先筛选出最相关的一小部分 Key，再对它们进行精确计算。这样既避免了全量计算，又保留了跨长距离建模的能力。整体来看，quest 机制使注意力从固定结构的稀疏计算，转变为“先检索、再计算”的两阶段过程，更适合超长上下文和大规模推理场景。
 
-本赛题要求选⼿在 Ascend 910B3 硬件平台上，**使⽤ Triton-Ascend 或 TileLang-Ascend 语言**（二选一即可）编写一个带 quest 的、支持 GQA 的 `Sparse Attention` 算子，代码框架可以在类脑平台的共享存储获得，题面在[此处](./assignment/sparse-1.pdf)。
+本赛题要求选⼿在 Ascend 910B3 硬件平台上，**使⽤ Triton-Ascend 或 TileLang-Ascend 语言**（二选一即可）编写一个带 quest 的、支持 GQA 的 `Sparse Attention` 算子，代码框架可以在类脑平台的共享存储获得，具体位置如下图；题面在[此处](./assignment/sparse-1.pdf)。
+
+![sparse-files](./fig/sparse-file.png)
 
 - **提交窗口**：进入希冀平台之后找到“课程--算子开发创新大赛--进阶算子 Sparse attention”。**具体赋分规则和评判标准将后续给出** 
 
@@ -38,7 +40,7 @@ Sparse attention 是为了解决标准自注意力在长序列下计算量随长
 
 !!! Warning "注意"
 
-    DDL：2026年3月15日23:59 (●′∀｀●)
+    DDL：2026年3月18日23:59 (●′∀｀●)
 
 
 
