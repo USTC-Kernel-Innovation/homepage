@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
@@ -22,7 +22,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -87,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#算子集成开发阶段" class="md-skip">
+        <a href="#算子集成开发测试阶段" class="md-skip">
           跳转至
         </a>
       
@@ -609,10 +609,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#算子集成开发阶段" class="md-nav__link">
+  <a href="#算子集成开发测试阶段" class="md-nav__link">
     <span class="md-ellipsis">
       
-        算子集成开发阶段
+        算子集成开发测试阶段
       
     </span>
   </a>
@@ -652,10 +652,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#算子集成开发阶段" class="md-nav__link">
+  <a href="#算子集成开发测试阶段" class="md-nav__link">
     <span class="md-ellipsis">
       
-        算子集成开发阶段
+        算子集成开发测试阶段
       
     </span>
   </a>
@@ -681,24 +681,8 @@
 
   <h1>集成开发测试</h1>
 
-<h2 id="算子集成开发阶段">算子集成开发阶段<a class="headerlink" href="#算子集成开发阶段" title="Permanent link">¶</a></h2>
-<div class="admonition info">
-<p class="admonition-title">说明</p>
-<p>本阶段禁止调用 npu 原生实现 torch_npu 的 reshape 接口等作为“自己的”实现，也不要抄袭其他同学的代码。助教会随机进行代码审查。</p>
-</div>
-<hr class="hr-my" data-content="(●′∀｀●) 我是分隔线 (●′∀｀●)">
-
-<p>vLLM 是一个工业真实的、面向大语言模型推理的高性能系统框架，广泛应用于在线对话系统、API 服务部署以及大规模推理服务中，例如支持类似 ChatGPT 这类多用户并发请求场景。它的核心目标是在有限显存下提升吞吐量和响应效率，通过分页式 KV cache（Paged KV Cache）等机制避免连续大内存分配，从而减少碎片并支持变长序列的高效批处理。在实际系统中，vLLM 负责请求调度、缓存管理以及算子调用，将底层高性能注意力算子（如 Paged Attention、Sparse Attention）与上层模型解耦，使其成为连接模型结构与系统优化的关键基础设施。</p>
-<p>本赛题围绕将自定义 Triton 算子集成到 vLLM 推理框架中展开，要求在<strong>保证功能正确的前提下实现高性能优化</strong>。具体而言，各位需要实现包括 Reshape and Cache、Paged Attention（支持 GQA）以及基于 Quest 思想的 Sparse Paged Attention 等核心算子，并使其适配真实推理场景中的分页 KV cache、变长序列和块映射机制。在计算流程上，Sparse Attention 需要先对逻辑块进行评分并筛选 Top-k，再执行精确注意力计算，从而减少无效计算。最终系统将在 vLLM 环境下进行端到端评测，从正确性和吞吐性能两个维度打分，重点考察算子的并行设计、访存优化以及与实际推理系统的融合能力。</p>
-<ul>
-<li><strong>提交窗口</strong>：<a href="cscourse.ustc.edu.cn">希冀平台</a> , 进入平台之后找到“课程--算子开发创新大赛--作业--vllm”</li>
-<li><strong>题面</strong>: <a href="../assignment/%E9%9B%86%E6%88%90%E9%A2%98%E9%9D%A2.pdf">题面在此处</a></li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">注意</p>
-<p><font color="red">DDL: 2026年4月6日23:59</font></p>
-<p>线下集中答辩时间在本阶段结束之后, 请关注QQ群后续通知</p>
-</div>
+<h2 id="算子集成开发测试阶段">算子集成开发测试阶段<a class="headerlink" href="#算子集成开发测试阶段" title="Permanent link">¶</a></h2>
+<hr class="hr-my" data-content="(●′∀｀●) 现在还什么都没有 (●′∀｀●)">
 
 
 
@@ -719,7 +703,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年3月24日 03:41:43 UTC">2026年3月24日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年1月28日 08:43:13 UTC">2026年1月28日</span>
   </span>
 
     
@@ -808,16 +792,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.footer", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.footer", "content.code.copy"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
         <script src="../javascripts/mathjax.js"></script>
-      
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
